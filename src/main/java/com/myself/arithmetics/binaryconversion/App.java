@@ -3,8 +3,10 @@ package com.myself.arithmetics.binaryconversion;
 
 import com.google.common.primitives.Ints;
 
-import java.util.*;
-import java.util.concurrent.LinkedBlockingQueue;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.LinkedList;
+
 
 public class App {
 
@@ -16,16 +18,18 @@ public class App {
 
     }
     public static String convertToBinaryString(int number) {
-        String result = "";
+        StringBuilder result = new StringBuilder("");
 
-        for(int d = number; d > 0; d /= 2) // d=d/2
-            result = (d % 2) + result;
-        return (result.equals("") ? "0" : result);
+        for (int d = number; d > 0; d /= 2) // d=d/2
+            result.insert(0, d % 2);
+
+        return (result.length() == 0) ? "0" : result.toString();
     }
     public static int[] convertToBinary(int number) {
         Deque<Integer> result = new LinkedList<>();
         for(int d = number; d > 0; d /= 2) // d=d/2
             result.addFirst(d % 2);
-        return Ints.toArray(result);
+
+        return (result.isEmpty() ? new int[]{0} : Ints.toArray(result));
     }
 }
