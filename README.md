@@ -9,6 +9,10 @@
 
 ## Package Description:
 
+###arithmetics.binaryconversion
+Implement a converter of an integer to its binary representation eg.:
+* 5 as binary is:    101
+* 6 as binary is:    110
 ###lists.onedirectional
 Implement basic operations on one-directional pointer list.
 ###misc.longestplateau
