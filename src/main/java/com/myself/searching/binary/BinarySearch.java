@@ -1,4 +1,4 @@
-package com.myself.searching;
+package com.myself.searching.binary;
 
 
 
@@ -66,13 +66,5 @@ public class BinarySearch {
             return (1 + right - left);
         else
             return 0;
-    }
-    int findValueEqualToIndex(int[] values){
-        if(values.length == 0)
-            return -1;
-
-
-
-        return 0;
     }
 }

@@ -12,7 +12,7 @@ public class App {
                 new int[]{1},
                 new int[]{}
         };
-        for(int i = 0; i < 6; i++) {
+        for(int i = 0; i < tabs.length; i++) {
             Plateau p = new Plateau(tabs[i]);
             p.findLongest();
             System.out.println(p);

@@ -34,7 +34,7 @@
             <archive>
               <manifest>
                 <addClasspath>true</addClasspath>
-                <mainClass>com.myself.lists.onedirectional.App</mainClass>
+                <!--<mainClass>com.myself.lists.onedirectional.App</mainClass>-->
               </manifest>
             </archive>
           </configuration>

@@ -2,7 +2,6 @@ package com.myself.lists.misc.longestplateau;
 
 
 import java.util.Arrays;
-import java.util.Collections;
 
 public class Plateau {
     public int startOfLongest = 0;

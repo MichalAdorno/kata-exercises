@@ -1,4 +1,4 @@
-package com.myself.searching;
+package com.myself.searching.binary;
 
 
 public class App {
