@@ -67,4 +67,12 @@ public class BinarySearch {
         else
             return 0;
     }
+    int findValueEqualToIndex(int[] values){
+        if(values.length == 0)
+            return -1;
+
+
+
+        return 0;
+    }
 }
