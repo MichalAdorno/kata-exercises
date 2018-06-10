@@ -1,4 +1,4 @@
-package com.myself.lists.misc.longestplateau;
+package com.myself.misc.longestplateau;
 
 
 import java.util.Arrays;

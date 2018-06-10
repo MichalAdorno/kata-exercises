@@ -1,4 +1,4 @@
-package com.myself.lists.misc.longestplateau;
+package com.myself.misc.longestplateau;
 
 public class App {
     public static void main(String[] args) {
