@@ -26,6 +26,15 @@ If a set is represented as a monotonic array, implement CRUD operations on a set
 * union of sets without duplicates
 * intersection
 * minus (exception)
+### misc.ringsofnumbers
+Construct a 2-dim. array like this for a given number > 0 (below an example for 3):
+```
+[1, 1, 1, 1, 1]
+[1, 2, 2, 2, 1]
+[1, 2, 3, 2, 1]
+[1, 2, 2, 2, 1]
+[1, 1, 1, 1, 1]
+```
 ### parsing.dijkstra
 Implement the Dijkstra algorithm to evaluate arithmetic expressions.
 ### parsing.tokenizer
