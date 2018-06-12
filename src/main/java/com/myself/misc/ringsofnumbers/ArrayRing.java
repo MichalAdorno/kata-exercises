@@ -3,8 +3,6 @@ package com.myself.misc.ringsofnumbers;
 import java.util.Arrays;
 import java.util.Comparator;
 
-import static java.lang.Math.min;
-
 
 public class ArrayRing {
 
