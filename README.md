@@ -37,6 +37,11 @@ Construct a 2-dim. array like this for a given number > 0 (below an example for 
 ```
 ### parsing.dijkstra
 Implement the Dijkstra algorithm to evaluate arithmetic expressions.
+### parsing.postfixevaluator
+Write an evaluator of postfix arithmetic expressions.
+For example, it should return the following results given postfix expressions:
+* postfix("7 3 +") = 7 + 3 = 10
+* postfix("7 3 + 8 1 - *") = (7 + 3) * (8 - 1) = 70. 
 ### parsing.tokenizer
 Tokenize an expression given the list of tokens eg.: 
 * "(1+sqrt(5))/2" --> ["(","1","+","sqrt","(","5",")",")","/","2"]
