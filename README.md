@@ -55,4 +55,18 @@ Check if a given string is a cyclic transformation of another, eg.:
 * abbbc <-> bbbca
 * aabb  <-> bbaa.
 ### strings.parentheses
-Write a stack client Parentheses.java that reads a string of parentheses, square brackets, and curly braces from standard input and uses a stack to determine whether they are properly balanced. For example, your program should print true for "[()]{}{[()()]()}" and false for "[(])".
+Write a stack client Parentheses.java that reads a string of parentheses, square brackets, and curly braces from standard input and uses a stack to determine whether they are properly balanced. For example, your program should print `true` for `"[()]{}{[()()]()}"` and `false` for `"[(])"`.
+### trees.bds
+Implement a breadth-first algorithm. A binary tree should be represented as a pointer-based data structure.
+The algorithm should use a queue.
+For example, a tree:
+```   
+             |a|
+            /   \
+         |b|    |c|
+        /  \       \
+     |d|   |e|     |f|
+                      \
+                      |g|
+```
+should be printed as: `a b c d e f g`. 
