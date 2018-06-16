@@ -3,11 +3,11 @@
 
 ## Learning Resources: 
 
-* R. Martin, The Clean Coder
-* R. Sedgewick, K. Wayne, Algorithms (4th ed.)
-* T. Cormen, Ch. Leiserson, R. Rivest, C. Stein, Introduction to Algorithms (2rd ed.)
-* N. Wirth, Algorithmen und Datenstrukturen
-
+* [MARTIN] R. Martin, The Clean Coder
+* [SEDGEWICK] R. Sedgewick, K. Wayne, Algorithms (4th ed.)
+* [CORMEN] T. Cormen, Ch. Leiserson, R. Rivest, C. Stein, Introduction to Algorithms (2rd ed.)
+* [WIRTH] N. Wirth, Algorithmen und Datenstrukturen
+* [LAAK] G. Laakman-McDowell, Cracking the Coding Interview: 150 Programming Questions and Solutions
 ## Package Description:
 
 ### arithmetics.binaryconversion
@@ -25,6 +25,8 @@ Implement Max-Heap along with its operations:
 * sift down
 ### lists.onedirectional
 Implement basic operations on one-directional pointer list.
+Implement also the following additional operations:
+* get the kth element to the end of the list (see [LAAK], ex. 2.2).
 ### misc.floydtriangle
 Top 75 Programming Interview Questions, no 57: write a program to print Floyd’s Triangle.
 ### misc.longestplateau

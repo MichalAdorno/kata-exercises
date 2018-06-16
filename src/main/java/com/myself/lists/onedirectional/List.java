@@ -2,7 +2,7 @@ package com.myself.lists.onedirectional;
 
 
 public class List<T extends Number> {
-    private List next;
+    private List<T> next;
     private T value;
 
     public List(){}

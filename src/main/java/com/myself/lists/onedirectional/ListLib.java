@@ -54,4 +54,26 @@ public class ListLib{
         return head.getNext();
 
     }
+
+    public static <T extends Number> T kthToLast(List<T> list, int kth) {
+        List<T> forrunner = list;
+        int size = 0;
+        while(forrunner != null){
+            size++;
+            forrunner = forrunner.getNext();
+        }
+        if(size < kth)
+            return null;
+
+        List<T> current = list;
+        int i = 1;
+        while(i <= size - kth){
+            current = current.getNext();
+            i++;
+        }
+        return current.getValue();
+
+    }
+
+
 }
