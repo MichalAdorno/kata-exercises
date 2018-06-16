@@ -11,8 +11,8 @@ public class App {
         String[][] expressions = {
                 new String[]{"7","3","+"},                      //7+3 = 10
                 new String[]{"7","3","+", "8", "*"},            //(7+3)*8 = 80
-                new String[]{"7","3","+", "1", "8", "-", "*"},  //(7+3)*(1-8) = -70 73+81-*
-                new String[]{"7","3","+", "8", "1", "-", "*"}   //(7+3)*(8-1) = 70 73+81-*
+                new String[]{"7","3","+", "1", "8", "-", "*"},  //(7+3)*(1-8) = -70 = 73+18-*
+                new String[]{"7","3","+", "8", "1", "-", "*"}   //(7+3)*(8-1) = 70 = 73+81-*
         };
         for (String[] expression : expressions){
             System.out.printf("Value(\"%25s\") = %d\n", Arrays.toString(expression), evaluatePostfix(expression));

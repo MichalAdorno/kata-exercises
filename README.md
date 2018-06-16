@@ -1,7 +1,7 @@
 # Algorithms and Data Structures
 
 
-## References: 
+## Learning resources: 
 
 * R. Martin, The Clean Coder
 * R. Sedgewick, K. Wayne, Algorithms (4th ed.)
@@ -16,6 +16,13 @@ Implement a converter of an integer to its binary representation eg.:
 * 6 as binary is:    110
 
 (Use Deque interface.)
+### heaps
+Implement Max-Heap along with its operations:
+* insert into heap
+* delete from root
+* build heap / heapify
+* sift up
+* sift down
 ### lists.onedirectional
 Implement basic operations on one-directional pointer list.
 ### misc.longestplateau
