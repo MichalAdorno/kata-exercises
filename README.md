@@ -25,6 +25,8 @@ Implement Max-Heap along with its operations:
 * sift down
 ### lists.onedirectional
 Implement basic operations on one-directional pointer list.
+### misc.floydtriangle
+Top 75 Programming Interview Questions, no 57: write a program to print Floyd’s Triangle.
 ### misc.longestplateau
 Find the longest plateau (constant value segment in a table.
 ### misc.monotoniccrud
