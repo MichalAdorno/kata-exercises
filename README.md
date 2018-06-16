@@ -1,7 +1,7 @@
 # Algorithms and Data Structures
 
 
-## Learning resources: 
+## Learning Resources: 
 
 * R. Martin, The Clean Coder
 * R. Sedgewick, K. Wayne, Algorithms (4th ed.)
@@ -42,6 +42,8 @@ Construct a 2-dim. array like this for a given number > 0 (below an example for 
 [1, 2, 2, 2, 1]
 [1, 1, 1, 1, 1]
 ```
+### misc.uncouple
+A couple is two adjacent identical items in a sequence. You are to remove all couples, then process the list recursively to remove any additional couples formed by the removal of the original couples. For instance, given the list {red blue green green blue red yellow}, first remove the green couple, leaving {red blue blue red yellow}, then remove the blue couple, leaving {red red yellow}, and finally remove the red couple, leaving {yellow}.
 ### parsing.dijkstra
 Implement the Dijkstra algorithm to evaluate arithmetic expressions.
 ### parsing.postfixevaluator
