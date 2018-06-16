@@ -57,6 +57,8 @@ Tokenize an expression given the list of tokens eg.:
 Implement the binary search that finds the first and the last occurence of a value in a table, use it to get the number of occurences.
 ### searching.bitonic
 Use binary search to find the maximum value in a bitonic table.
+### sorting.heapsort
+Implement HeapSort (use previously implemented max-heap).
 ### strings.cyclic
 Check if a given string is a cyclic transformation of another, eg.:
 * abbbc <-> bbbca
