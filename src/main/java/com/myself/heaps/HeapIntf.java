@@ -21,6 +21,8 @@ public interface HeapIntf<T extends Comparable<T>> {
 
     T pop();
 
+    T peek();
+
     void push(T elem);
 
     void ofUnsafe(List<T> array);

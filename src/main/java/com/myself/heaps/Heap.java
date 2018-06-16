@@ -2,8 +2,7 @@ package com.myself.heaps;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
+//import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 
@@ -15,6 +14,14 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
     public Heap() {
         this.internalArray = new ArrayList<>();
         this.size = 0;
+    }
+
+    public List<T> getInternalArray() {
+        return internalArray;
+    }
+
+    public int getSize() {
+        return size;
     }
 
     @Override
@@ -79,7 +86,8 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
 
     @Override
     public void buildHeapFromArray(List<T> array) {
-        internalArray = array;
+        this.internalArray = array;
+        this.size = array.size();
         restoreHeapProperty();
     }
 
@@ -91,6 +99,7 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
 
         T elem = internalArray.get(last());
         T removed = internalArray.get(first());
+        internalArray.set(last(), removed);
         //internalArray.remove(last());
         this.size--;
 
@@ -110,6 +119,12 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
 
         return removed;
 
+    }
+
+
+    @Override
+    public T peek(){
+        return getRoot();
     }
 
     @Override
@@ -199,9 +214,8 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
 
     }
 
-
     @Override
     public String toString() {
-        return "Heap " + internalArray;
+        return "Heap " + internalArray.subList(0, size());
     }
 }

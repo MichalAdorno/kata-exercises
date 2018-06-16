@@ -45,7 +45,7 @@ public class App {
         root = 10;
         heap.push(root);
         System.out.printf("****************\n");
-        System.out.printf("After pop(): %15s\n", heap);
+        System.out.printf("After push(): %15s\n", heap);
         System.out.printf("Added element: %s\n", root);
         System.out.printf("%15s has the heap property: %b\n", heap, heap.hasHeapProperty());
 
@@ -53,7 +53,7 @@ public class App {
         root = 100;
         heap.push(root);
         System.out.printf("****************\n");
-        System.out.printf("After pop(): %15s\n", heap);
+        System.out.printf("After push(): %15s\n", heap);
         System.out.printf("Added element: %s\n", root);
         System.out.printf("%15s has the heap property: %b\n", heap, heap.hasHeapProperty());
 
