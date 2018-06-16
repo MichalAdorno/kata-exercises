@@ -5,6 +5,8 @@ import java.util.List;
 
 public interface HeapIntf<T extends Comparable<T>> {
 
+    void restoreHeapProperty();
+
     T getRoot();
 
     int size();
@@ -14,8 +16,6 @@ public interface HeapIntf<T extends Comparable<T>> {
     T getLeftChildOf(int i);
 
     T getRightChildOf(int i);
-
-    void heapify();
 
     void buildHeapFromArray(List<T> array);
 

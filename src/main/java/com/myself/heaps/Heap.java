@@ -30,7 +30,7 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
 
         int i = first();
 
-        while(i < last()){
+        while(i <= last() / 2){
 
             if(exists(left(i)) && internalArray.get(i).compareTo(internalArray.get(left(i))) < 0)
                 return false;
@@ -41,6 +41,12 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
         }
 
         return true;
+    }
+
+    @Override
+    public void restoreHeapProperty(){
+        for(int j = parent(last()); j >= 0; j--)
+            heapify(j);
     }
 
     @Override
@@ -69,13 +75,9 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
     }
 
     @Override
-    public void heapify() {
-
-    }
-
-    @Override
     public void buildHeapFromArray(List<T> array) {
-
+        internalArray = array;
+        restoreHeapProperty();
     }
 
     @Override
@@ -95,7 +97,7 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
             if(elem.compareTo(internalArray.get(greater(i))) > 0)
                 break;
 
-            internalArray.set(i, internalArray.get(greater(i)));
+            copyOn(i, greater(i));
             i = greater(i);
 
         }
@@ -114,7 +116,7 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
 
         while(i > 0 && internalArray.get(parent(i)).compareTo(elem) < 0){
 
-            copy(i, parent(i));
+            copyOn(i, parent(i));
             i = parent(i);
 
         }
@@ -157,9 +159,41 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
         return (exists(sibling(left(i))) && internalArray.get(sibling(left(i))).compareTo(internalArray.get(left(i))) > 0) ? sibling(left(i)) : left(i);
     }
 
-    private void copy(int i, int j){
+    private void copyOn(int i, int j){
         internalArray.set(i, internalArray.get(j));
     }
+
+    private void swap(int i, int j){
+
+        T elem = internalArray.get(i);
+        internalArray.set(i, internalArray.get(j));
+        internalArray.set(j, elem);
+
+    }
+
+    private int largest(int i){
+
+        int largest = i;
+
+        if(exists(left(i)))
+            largest = (internalArray.get(i).compareTo(internalArray.get(left(i))) > 0) ? i : left(i);
+
+        if(exists(right(i)))
+            largest = (internalArray.get(largest).compareTo(internalArray.get(right(i))) > 0) ? largest : right(i);
+
+        return largest;
+
+    }
+    
+    private void heapify(int i){
+        int largest = largest(i);
+        if(largest != i) {
+            swap(i, largest);
+            heapify(largest);
+        }
+
+    }
+
 
     @Override
     public String toString() {
