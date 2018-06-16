@@ -10,9 +10,11 @@ import java.util.function.Function;
 public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
 
     private List<T> internalArray;
+    private int size;
 
     public Heap() {
         this.internalArray = new ArrayList<>();
+        this.size = 0;
     }
 
     @Override
@@ -21,6 +23,7 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
         this.internalArray = new ArrayList<>(array.size());
 //        Collections.copy(this.internalArray, array);
         this.internalArray = array;
+        this.size = array.size();
     }
 
     @Override
@@ -56,7 +59,7 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
 
     @Override
     public int size() {
-        return internalArray.size();
+        return size;
     }
 
     @Override
@@ -88,7 +91,8 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
 
         T elem = internalArray.get(last());
         T removed = internalArray.get(first());
-        internalArray.remove(last());
+        //internalArray.remove(last());
+        this.size--;
 
         int i = first();
 
@@ -112,6 +116,7 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
     public void push(T elem) {
 
         internalArray.add(elem);
+        size++;
         int i = last();
 
         while(i > 0 && internalArray.get(parent(i)).compareTo(elem) < 0){
@@ -148,11 +153,11 @@ public class Heap<T extends Comparable<T>> implements HeapIntf<T> {
     }
 
     private int last(){
-        return internalArray.size() - 1;
+        return size() - 1;
     }
 
     private boolean exists(int i){
-        return i < internalArray.size();
+        return i < size();
     }
 
     private int greater(int i){

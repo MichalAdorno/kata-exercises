@@ -74,5 +74,8 @@ public class App {
         invalidHeap.restoreHeapProperty();
         System.out.printf("%15s has the heap property: %b\n", invalidHeap, invalidHeap.hasHeapProperty());
 
+        //---
+
+
     }
 }
