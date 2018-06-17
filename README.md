@@ -27,6 +27,7 @@ Implement Max-Heap along with its operations:
 Implement basic operations on one-directional pointer list.
 Implement also the following additional operations:
 * get the kth element to the end of the list (see [LAAK], ex. 2.2).
+* check if a given list is a palindrome.
 ### misc.floydtriangle
 Top 75 Programming Interview Questions, no 57: write a program to print Floyd’s Triangle.
 ### misc.longestplateau

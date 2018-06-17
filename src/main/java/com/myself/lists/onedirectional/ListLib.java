@@ -1,6 +1,8 @@
 package com.myself.lists.onedirectional;
 
 
+import java.util.Deque;
+
 public class ListLib{
 
     public static <T extends Number> List<T> createListFromArray(T[] values){
@@ -75,5 +77,25 @@ public class ListLib{
 
     }
 
+    public static <T extends Number> boolean isPalindrome(List<T> list) {
+        List<T> current = list;
+        int size = 0;
+        while(current != null){
+            current = current.getNext();
+            size++;
+        }
+        int mid = size / 2;
+        int i = 0;
+        current = list;
+        List<T> reversed = reverse(list);
+        while(i < mid){
+            if(!list.getValue().equals(reversed.getValue()))
+                return false;
+            i++;
+            list = list.getNext();
+            reversed = reversed.getNext();
+        }
+        return true;
+    }
 
 }

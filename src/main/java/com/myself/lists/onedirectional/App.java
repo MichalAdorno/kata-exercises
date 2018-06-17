@@ -1,12 +1,12 @@
 package com.myself.lists.onedirectional;
 
 
-
 public class App {
 
     public static void main(String[] args) {
         //---
         List<Integer> list = ListLib.createListFromArray(new Integer[]{1,2,3,4,5,6,7,8,9});
+        List<Integer> palindromeCandidate;
         int kth;
         Integer kthElem;
         //reverse
@@ -44,6 +44,31 @@ public class App {
         kth = 20;
         kthElem = ListLib.kthToLast(list, kth);
         System.out.printf("Element no. %d from tail is: %d\n", kth, kthElem);
+
+        //---
+        palindromeCandidate = ListLib.createListFromArray(new Integer[]{1,2,3,3,2,1});
+        System.out.printf("The list [%20s] is palindrome: %b\n", palindromeCandidate, ListLib.isPalindrome(palindromeCandidate));
+        //---
+        palindromeCandidate = ListLib.createListFromArray(new Integer[]{1,2,3,3,2});
+        System.out.printf("The list [%20s] is palindrome: %b\n", palindromeCandidate, ListLib.isPalindrome(palindromeCandidate));
+        //---
+        palindromeCandidate = ListLib.createListFromArray(new Integer[]{1,2,3,2,1});
+        System.out.printf("The list [%20s] is palindrome: %b\n", palindromeCandidate, ListLib.isPalindrome(palindromeCandidate));
+        //---
+        palindromeCandidate = ListLib.createListFromArray(new Integer[]{1,2,1});
+        System.out.printf("The list [%20s] is palindrome: %b\n", palindromeCandidate, ListLib.isPalindrome(palindromeCandidate));
+        //---
+        palindromeCandidate = ListLib.createListFromArray(new Integer[]{1,1});
+        System.out.printf("The list [%20s] is palindrome: %b\n", palindromeCandidate, ListLib.isPalindrome(palindromeCandidate));
+        //---
+        palindromeCandidate = ListLib.createListFromArray(new Integer[]{1,2});
+        System.out.printf("The list [%20s] is palindrome: %b\n", palindromeCandidate, ListLib.isPalindrome(palindromeCandidate));
+        //---
+        palindromeCandidate = ListLib.createListFromArray(new Integer[]{1});
+        System.out.printf("The list [%20s] is palindrome: %b\n", palindromeCandidate, ListLib.isPalindrome(palindromeCandidate));
+        //---
+        palindromeCandidate = ListLib.createListFromArray(new Integer[]{});
+        System.out.printf("The list [%20s] is palindrome: %b\n", palindromeCandidate, ListLib.isPalindrome(palindromeCandidate));
     }
 
 
