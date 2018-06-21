@@ -16,6 +16,10 @@ Implement a converter of an integer to its binary representation eg.:
 * 6 as binary is:    110
 
 (Use Deque interface.)
+### concurrency.diningphilosophers
+Implement a solution to the Dining Philosophers problem.
+
+_Note_: threads should avoid circular deadlocks, so _any_ acyclical directed graph representing synchronisation on forks is a correct solution.
 ### heaps
 Implement Max-Heap along with its operations:
 * insert into heap
