@@ -47,7 +47,7 @@ public class GraphAsMatrix {
         return builder.toString();
     }
 
-    public boolean isCyclicNoDirection(){
+    public boolean isCyclicDirected(){
         for(int i = 0; i < v; i++)
             if(followTransitionPath(i, i + 1) == i + 1)
                 return true;
@@ -59,11 +59,16 @@ public class GraphAsMatrix {
         if(isVisitedInCycle(j, cnt))
             return cnt;
 
-        visit(j, cnt);
+//        visit(j, cnt); //for non-directed
 
         for (int k = 0; k < v; k++)
-            if (existsDirectedEdge(j, k) && followTransitionPath(k, cnt) == cnt)
+            if (existsDirectedEdge(j, k)){
+                visit(j, cnt);  //for directed
+                if(followTransitionPath(k, cnt) == cnt){
                     return cnt;
+                }
+            }
+
 
         return 0;
     }

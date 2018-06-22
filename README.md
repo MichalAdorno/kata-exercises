@@ -22,7 +22,7 @@ Implement a solution to the Dining Philosophers problem.
 _Note_: threads should avoid circular deadlocks, so _any_ acyclical directed graph representing synchronisation on forks is a correct solution.
 ### graphs.cycledetection
 Suppose a graph is represented in a 2-dimensional matrix.
-Write an algorithm that detects whether a non-directed graph has a cycle.
+Write an algorithm that detects whether a directed graph has a cycle.
 ### heaps
 Implement Max-Heap along with its operations:
 * insert into heap

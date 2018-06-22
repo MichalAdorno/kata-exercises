@@ -17,7 +17,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + " while expected " + true);
+        System.out.println(graph.isCyclicDirected() + " while expected " + true); //just for simplicity, we don't use unit tests here, could be otherwise done with assertJ very nicely
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -28,7 +28,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + " while expected " + false);
+        System.out.println(graph.isCyclicDirected() + " while expected " + false);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -39,7 +39,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + " while expected " + false);
+        System.out.println(graph.isCyclicDirected() + " while expected " + false);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -50,7 +50,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + " while expected " + true);
+        System.out.println(graph.isCyclicDirected() + " while expected " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -61,7 +61,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + false);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + false);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -72,7 +72,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + false);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + false);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -83,7 +83,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -94,7 +94,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -105,7 +105,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -116,7 +116,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -127,7 +127,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -137,7 +137,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + false);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + false);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -147,7 +147,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -156,7 +156,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -167,7 +167,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -176,7 +176,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + false);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + false);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -185,7 +185,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -197,7 +197,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -209,7 +209,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + false);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + false);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -221,7 +221,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + false);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + false);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -233,7 +233,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -245,7 +245,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -257,7 +257,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -269,7 +269,7 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + false);
         //---
         System.out.println("**************************");
         representation = new int[][]{
@@ -281,7 +281,55 @@ public class App {
         };
         graph = new GraphAsMatrix(representation);
         System.out.println(graph);
-        System.out.println(graph.isCyclicNoDirection() + ", while expected: " + true);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
+        //---
+        System.out.println("**************************");
+        representation = new int[][]{
+                {1,0,0,0,0},
+                {1,0,0,0,0},
+                {1,0,0,0,0},
+                {1,0,0,0,0},
+                {1,0,0,0,0}
+        };
+        graph = new GraphAsMatrix(representation);
+        System.out.println(graph);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
+        //---
+        System.out.println("**************************");
+        representation = new int[][]{
+                {0,0,0,0,0},
+                {1,0,0,0,0},
+                {1,0,0,0,0},
+                {1,0,0,0,0},
+                {1,0,0,0,0}
+        };
+        graph = new GraphAsMatrix(representation);
+        System.out.println(graph);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + false);
+        //---
+        System.out.println("**************************");
+        representation = new int[][]{
+                {0,1,0,0,0},
+                {0,0,0,0,0},
+                {0,1,0,0,0},
+                {0,1,0,0,0},
+                {0,1,0,0,0}
+        };
+        graph = new GraphAsMatrix(representation);
+        System.out.println(graph);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + false);
+        //---
+        System.out.println("**************************");
+        representation = new int[][]{
+                {0,1,0,0,0},
+                {0,1,0,0,0},
+                {0,1,0,0,0},
+                {0,1,0,0,0},
+                {0,1,0,0,0}
+        };
+        graph = new GraphAsMatrix(representation);
+        System.out.println(graph);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + true);
         //---
     }
 
