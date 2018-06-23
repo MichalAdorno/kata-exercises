@@ -19,7 +19,9 @@ Implement a converter of an integer to its binary representation eg.:
 ### concurrency.diningphilosophers
 Implement a solution to the Dining Philosophers problem.
 
-_Note_: threads should avoid circular deadlocks, so _any_ acyclical directed graph representing synchronisation on forks is a correct solution.
+_Note_: threads should avoid circular deadlocks, so there are several directed graph representing synchronisation on forks is a correct solution.
+
+Implement a generalized solution to this problem. Any valid graph representing philosophers taking forks should define the "protocol" of fork-usage.
 ### graphs.cycledetection
 Suppose a graph is represented in a 2-dimensional matrix.
 Write an algorithm that detects whether a directed graph has a cycle.

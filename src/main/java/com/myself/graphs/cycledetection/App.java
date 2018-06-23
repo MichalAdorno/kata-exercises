@@ -343,6 +343,31 @@ public class App {
         System.out.println(graph);
         System.out.println(graph.isCyclicDirected() + ", while expected: " + false);
         //---
+        System.out.println("**************************");
+        representation = new int[][]{
+                {0,1,0,0,1},
+                {1,0,1,0,0},
+                {0,1,0,1,0},
+                {0,0,1,0,1},
+                {1,0,0,1,0},
+        };
+        graph = new GraphAsMatrix(representation);
+        System.out.println(graph);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + false);
+        //---
+        System.out.println("**************************");
+        representation = new int[][]{
+                {0,1,0,0,1},
+                {0,0,1,0,0},
+                {0,0,0,1,0},
+                {0,0,0,0,1},
+                {0,0,0,0,0},
+        };
+        graph = new GraphAsMatrix(representation);
+        System.out.println(graph);
+        System.out.println(graph.isCyclicDirected() + ", while expected: " + false);
+        //---
+
     }
 
 }

@@ -7,6 +7,7 @@ public class Philosopher implements Runnable {
 
     private int diningRounds;
     private int currentRound = 0;
+
     private Long fork1;
     private Long fork2;
 
@@ -81,6 +82,14 @@ public class Philosopher implements Runnable {
     public Philosopher setFork2(Long fork2) {
         this.fork2 = fork2;
         return this;
+    }
+
+    public Long getFork1() {
+        return fork1;
+    }
+
+    public Long getFork2() {
+        return fork2;
     }
 
     public Philosopher setDiningRounds(int diningRounds) {

@@ -74,4 +74,8 @@ public class GraphAsMatrix {
     }
 
 
+    public int getV() {
+        return v;
+    }
+
 }

@@ -3,11 +3,11 @@ package com.myself.concurrency.diningphilosophers;
 
 public class Diner {
 
-    private int diningRounds;
-    private Philosopher[] philosophers;
-    private Thread[] threads;
-    private Long[] forks;
-    private int numberOfDiningPhilosophers;
+    int diningRounds;
+    Philosopher[] philosophers;
+    Thread[] threads;
+    Long[] forks;
+    int numberOfDiningPhilosophers;
 
     public Diner(int numberOfDiningPhilosophers, int diningRounds) {
         this.diningRounds = diningRounds;
@@ -47,4 +47,13 @@ public class Diner {
         }
     }
 
+    public void join() {
+        for(int i = 0; i < numberOfDiningPhilosophers; i++){
+            try {
+                threads[i].join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
