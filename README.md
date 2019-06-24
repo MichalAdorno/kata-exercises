@@ -37,6 +37,10 @@ Implement basic operations on one-directional pointer list.
 Implement also the following additional operations:
 * get the kth element to the end of the list (see [LAAK], ex. 2.2).
 * check if a given list is a palindrome.
+### misc.floodfill
+Implement an algorithm that for a given 2D array simulates a flood by changing its fields according to the following rules:
+* floodable fields are those that have the same value as the initial flooding field
+* and that can be reached only by moving north/east/south/west from an already flooded field.
 ### misc.floydtriangle
 Top 75 Programming Interview Questions, no 57: write a program to print Floyd’s Triangle.
 ### misc.longestplateau
