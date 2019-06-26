@@ -1,4 +1,4 @@
-package com.myself.trees;
+package com.myself.trees.bds;
 
 
 import java.util.Deque;

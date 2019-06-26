@@ -99,3 +99,6 @@ For example, a tree:
                       |g|
 ```
 should be printed as: `a b c d e f g`. 
+### trees.bst
+Binary Search Trees:
+1. Implement an algorithm that finds a successor of a given element of a binary search tree.

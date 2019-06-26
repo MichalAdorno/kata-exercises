@@ -1,8 +1,6 @@
 package com.myself.trees.bds;
 
 
-import com.myself.trees.BinaryTree;
-
 public class App {
 
     public static void main(String[] args) {

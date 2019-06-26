@@ -8,7 +8,7 @@ class FloodTests extends BaseTest {
     @Subject
     Flood flood = new Flood();
 
-    void 'given area-1 then substitute (2) for (9)'() {
+    def 'given area-1 then substitute (2) for (9)'() {
         given:
         def watermark = 9
         def arr = [
@@ -34,7 +34,7 @@ class FloodTests extends BaseTest {
         floodedArea != null
     }
 
-    void 'given area-2 then substitute (2) for (9)'() {
+    def 'given area-2 then substitute (2) for (9)'() {
         given:
         def watermark = 9
         def arr = [
@@ -60,7 +60,7 @@ class FloodTests extends BaseTest {
         floodedArea != null
     }
 
-    void 'given area-3 then substitute (1) for (9)'() {
+    def 'given area-3 then substitute (1) for (9)'() {
         given:
         def watermark = 9
         def arr = [
@@ -86,7 +86,7 @@ class FloodTests extends BaseTest {
         floodedArea != null
     }
 
-    void 'given area-4 then substitute (0) for (9)'() {
+    def 'given area-4 then substitute (0) for (9)'() {
         given:
         def watermark = 9
         def arr = [
@@ -112,7 +112,7 @@ class FloodTests extends BaseTest {
         floodedArea != null
     }
 
-    void 'given area-5 then substitute (7) for (9)'() {
+    def 'given area-5 then substitute (7) for (9)'() {
         given:
         def watermark = 9
         def arr = [
