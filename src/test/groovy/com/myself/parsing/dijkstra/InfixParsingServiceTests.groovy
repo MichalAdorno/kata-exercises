@@ -83,7 +83,6 @@ class InfixParsingServiceTests extends BaseTest {
         then:
         result == 101.0
 
-
     }
 
     def setup() {
