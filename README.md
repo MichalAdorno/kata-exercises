@@ -33,8 +33,8 @@ Implement Max-Heap along with its operations:
 * sift up
 * sift down
 ### lists.onedirectional
-Implement basic operations on one-directional pointer list.
-Implement also the following additional operations:
+1. Implement basic operations on one-directional pointer list.
+2. Implement also the following additional operations:
 * get the kth element to the end of the list (see [LAAK], ex. 2.2).
 * check if a given list is a palindrome.
 ### misc.floodfill
@@ -76,7 +76,8 @@ Tokenize an expression given the list of tokens eg.:
 * "(1+sqrt(5))/2" --> ["(","1","+","sqrt","(","5",")",")","/","2"]
 * "1 + (2 - 3)" --> ["1","+","(","2","-","3",")"]
 ### searching.binary
-Implement the binary search that finds the first and the last occurence of a value in a table, use it to get the number of occurences.
+1. Implement the binary search that finds the first and the last occurence of a value in a table, use it to get the number of occurences.
+2. Implement an algorithm that finds an index i in a ascending (monothonic) array A of unique integers where A[i]==i (see [LAAK], ex. 9.3).
 ### searching.bitonic
 Use binary search to find the maximum value in a bitonic table.
 ### sorting.heapsort
