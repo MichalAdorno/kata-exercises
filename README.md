@@ -80,6 +80,13 @@ Tokenize an expression given the list of tokens eg.:
 2. Implement an algorithm that finds an index i in a ascending (monothonic) array A of unique integers where A[i]==i (see [LAAK], ex. 9.3).
 ### searching.bitonic
 Use binary search to find the maximum value in a bitonic table.
+### searching.antibitonic
+Use binary search to find the minimum value in an antibitonic table.
+A table A[0..n] of Integers is antibitonic when there exists an index i (0<i<n) for which:
+* A[0..i] forms a strictly decreasing sequence
+* A[i..n] forms a strictly increasing sequence.
+(So the graph of i->A[i] is similar to the letter "V".)
+
 ### sorting.heapsort
 Implement HeapSort (use previously implemented max-heap).
 ### strings.cyclic
