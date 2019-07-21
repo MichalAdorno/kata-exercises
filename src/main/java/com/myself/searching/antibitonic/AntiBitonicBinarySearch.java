@@ -3,10 +3,9 @@ package com.myself.searching.antibitonic;
 public class AntiBitonicBinarySearch {
 
     public int search(final int values[]) {
-        return search(values, 0, values.length - 1);
-    }
 
-    int search(final int values[], int left, int right) {
+        int left = 0;
+        int right = values.length - 1;
 
         if (right < left) {
             throw new IllegalArgumentException();
@@ -30,6 +29,9 @@ public class AntiBitonicBinarySearch {
             } else {
                 return -1;
             }
+        }
+        if (left == 0 || left == values.length - 1) {
+            return -1;
         }
 
         return values[left - 1] > values[left] && values[left] < values[left + 1]

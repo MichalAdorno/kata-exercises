@@ -68,4 +68,16 @@ class AntiBitonicBinarySearchTests extends BaseTest {
         then:
         resultingIndex == fixedPointIndex
     }
+
+    def 'test-6'() {
+        given:
+        def fixedPointIndex = -1
+        int[] values = [40, 31, 22, 20, 19, 18, 17, 15]
+
+        when:
+        def resultingIndex = service.search(values)
+
+        then:
+        resultingIndex == fixedPointIndex
+    }
 }

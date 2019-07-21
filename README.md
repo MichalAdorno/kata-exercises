@@ -62,6 +62,10 @@ Construct a 2-dim. array like this for a given number > 0 (below an example for 
 ```
 ### misc.uncouple
 A couple is two adjacent identical items in a sequence. You are to remove all couples, then process the list recursively to remove any additional couples formed by the removal of the original couples. For instance, given the list {red blue green green blue red yellow}, first remove the green couple, leaving {red blue blue red yellow}, then remove the blue couple, leaving {red red yellow}, and finally remove the red couple, leaving {yellow}.
+### misc.col
+1. There is an array of integers A[0..n]. Create and populate an array of boolean values according to the following rule (predicate):
+for each i in [0..n]: B[i] == true <=> exists j in [0..i): A[j]==i and exists j in (i..n]: A[j]==i.
+(The solution must be linear O(n) in computation time and space.)
 ### parsing.dijkstra
 Implement the Dijkstra algorithm to evaluate arithmetic infix expressions.
 * "2+(1+2)*(3-3)" -> 
