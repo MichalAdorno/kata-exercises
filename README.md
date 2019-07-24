@@ -8,8 +8,8 @@
 * [CORMEN] T. Cormen, Ch. Leiserson, R. Rivest, C. Stein, Introduction to Algorithms (2rd ed.)
 * [WIRTH] N. Wirth, Algorithmen und Datenstrukturen
 * [LAAK] G. Laakman-McDowell, Cracking the Coding Interview: 150 Programming Questions and Solutions
-## Package Description:
-
+## Problems / Package Description:
+My solutions to algorithmic problems are grouped in distinct packages:
 ### arithmetics.binaryconversion
 Implement a converter of an integer to its binary representation eg.:
 * 5 as binary is:    101
@@ -37,6 +37,11 @@ Implement Max-Heap along with its operations:
 2. Implement also the following additional operations:
 * get the kth element to the end of the list (see [LAAK], ex. 2.2).
 * check if a given list is a palindrome.
+### misc.find3
+Find three numbers a, b, c (a "troika" in Russian;) ) such that:
+* a < b < c
+* exists i<j<k in [0..n]: nums[i]=a && nums[j]=b && nums[k]=c
+for a given array of integers `nums`.
 ### misc.floodfill
 Implement an algorithm that for a given 2D array simulates a flood by changing its fields according to the following rules:
 * floodable fields are those that have the same value as the initial flooding field
@@ -66,7 +71,7 @@ Write an algorithm that calculates the length of the longest segment A[l..r] of 
 
 ```
 for all i,j in [l..r]: 
-abs( A[i] - A[j] ) < tol
+abs( A[i] - A[j] ) <= tol
 ``` 
 where tol (tolerance) is a positive integer. The algorithm should be O(n^2) fast.
 ### misc.uncouple
