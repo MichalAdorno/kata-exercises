@@ -60,6 +60,15 @@ Construct a 2-dim. array like this for a given number > 0 (below an example for 
 [1, 2, 2, 2, 1]
 [1, 1, 1, 1, 1]
 ```
+### misc.tolerance
+Write an algorithm that calculates the length of the longest segment A[l..r] of an array (sequence) of integers A[0..n] 
+(l,r in [0..n]) for which the following conditions holds:
+
+```
+for all i,j in [l..r]: 
+abs( A[i] - A[j] ) < tol
+``` 
+where tol (tolerance) is a positive integer. The algorithm should be O(n^2) fast.
 ### misc.uncouple
 A couple is two adjacent identical items in a sequence. You are to remove all couples, then process the list recursively to remove any additional couples formed by the removal of the original couples. For instance, given the list {red blue green green blue red yellow}, first remove the green couple, leaving {red blue blue red yellow}, then remove the blue couple, leaving {red red yellow}, and finally remove the red couple, leaving {yellow}.
 ### misc.col
