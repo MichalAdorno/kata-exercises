@@ -27,6 +27,7 @@ public class MonothonicTroikaFinder {
                         xRes = current;
                     }
                 }
+
             } else if (haveExactlyTwo(a, b)) {
                 if (b < current) {
                     return new Troika(a, b, current);
