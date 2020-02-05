@@ -59,8 +59,7 @@ areas of the same value reachable by moving North, East, West, South finite numb
 
 Implement this algorithm in multiple ways:
 1. using recursion
-2. without recursion but with a queue/deque
-3. without recursion but with a black-red tree (TreeSet in Java).
+2. without recursion but with a queue/deque.
 
 Observe which approach is:
 1. the fastest,
