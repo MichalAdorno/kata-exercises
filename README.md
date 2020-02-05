@@ -17,6 +17,12 @@ Implement a converter of an integer to its binary representation eg.:
 * 6 as binary is:    110
 
 (Use Deque interface.)
+### combinatorics.newtonbinomial
+Compute Newton (binomial) coefficient with limits:
+* cap their value if it is going to be bigger than 1_000_000_000,
+* ensure there is no arithmetic overflow,
+* do not use the BigDecimal / BigInteger classes of Java.
+
 ### concurrency.diningphilosophers
 Implement a solution to the Dining Philosophers problem.
 
