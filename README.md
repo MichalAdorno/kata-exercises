@@ -216,6 +216,18 @@ there exists an index i (0<i<n) for which:
 
 Implement HeapSort (use previously implemented max-heap).
 
+### strings.balanced
+
+Find the length of the longest balanced substring of a given string. If a string does not have any balanced substring,
+then return -1.
+A string is considered balanced if for any character it contains, it contains both the lower case variant and 
+the upper case variant of the character (in any amount) eg:
+* "aaaaaA" - is balanced,
+* "baBASssssa" - is balanced,
+* "s" - is not balanced,
+* "SsSx" - is not balanced,
+* "sSxXX" - is balanced, etc.
+
 ### strings.cyclic
 
 Check if a given string is a cyclic transformation of another, eg.:
