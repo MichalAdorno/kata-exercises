@@ -192,10 +192,33 @@ Tokenize an expression given the list of tokens eg.:
 * "(1+sqrt(5))/2" --> ["(","1","+","sqrt","(","5",")",")","/","2"]
 * "1 + (2 - 3)" --> ["1","+","(","2","-","3",")"]
 
+### parsing.treenotation
+
+A binary search tree can be described using the following notation "Grammar":
+* _ ∈ Grammar
+* X ∈ Integers => (X _ _) ∈ Grammar
+* X ∈ Integers, L ∈ Grammar, R ∈ Grammar => (X L R).
+
+Implement an algoritm that creates a Binary Tree given an expression from tha above described grammar.
+For example:
+```
+             |1|
+            /   \
+         |2|    |3|
+        /          \
+     |4|            |5|
+                      \
+                      |6|
+```
+is represented by:
+```
+(1 (2 (4 _ _) _) (3 _ (5 _ (6 _ _))))
+```
+
 ### searching.binary
 
 1. Implement the binary search that finds the first and the last occurence of a value in a table, use it to get the
-   number of occurences.
+   number of occurrences.
 2. Implement an algorithm that finds an index i in a ascending (monothonic) array A of unique integers where A[i]==i (
    see [LAAK], ex. 9.3).
 
@@ -263,3 +286,18 @@ should be printed as: `a b c d e f g`.
 Binary Search Trees:
 
 1. Implement an algorithm that finds a successor of a given element of a binary search tree.
+
+### trees.longestuniquepath
+
+Implement an algorithm that computes length of the longest unique path in a binary tree that begins in the tree root.
+For example, in given tree:
+```   
+             |1|
+            /   \
+         |2|    |3|
+        /  \       \
+     |4|   |3|     |1|
+                      \
+                      |8|
+```
+the longest path is 1-2-4 or 1-2-3 

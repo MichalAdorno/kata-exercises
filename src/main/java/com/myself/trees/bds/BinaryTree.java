@@ -14,6 +14,12 @@ public class BinaryTree {
         this.value = value;
     }
 
+    public BinaryTree(BinaryTree left, String value, BinaryTree right) {
+        this.left = left;
+        this.value = value;
+        this.right = right;
+    }
+
     public static String breadthFirstTraversal(BinaryTree root){
         StringBuilder accumulator = new StringBuilder("");
         Deque<BinaryTree> queue = new LinkedList<>();
