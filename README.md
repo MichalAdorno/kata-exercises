@@ -1,6 +1,13 @@
-# Algorithms and Data Structures
+# Algorithms and Data Structures - Kata Exercises
 
 [![Build Status](https://travis-ci.org/MichalAdorno/kata-exercises.svg?branch=master)](https://travis-ci.org/MichalAdorno/kata-exercises)
+
+```
+I hear and I forget.
+I see and I remember.
+I do and I understand.
+-- Confucius
+```
 
 ## Learning Resources:
 
@@ -9,6 +16,7 @@
 * [CORMEN] T. Cormen, Ch. Leiserson, R. Rivest, C. Stein, Introduction to Algorithms (2rd ed.)
 * [WIRTH] N. Wirth, Algorithmen und Datenstrukturen
 * [LAAK] G. Laakman-McDowell, Cracking the Coding Interview: 150 Programming Questions and Solutions
+* [G4G] www.geeksforgeeks.org
 
 ## Problems / Package Description:
 
@@ -287,6 +295,10 @@ Binary Search Trees:
 
 1. Implement an algorithm that finds a successor of a given element of a binary search tree.
 
+### trees.kthlargest
+
+Find the k-th largest element in a binary search tree (see: [G4G]).
+
 ### trees.longestuniquepath
 
 Implement an algorithm that computes length of the longest unique path in a binary tree that begins in the tree root.
@@ -301,3 +313,7 @@ For example, in given tree:
                       |8|
 ```
 the longest path is 1-2-4 or 1-2-3 
+
+### trees.print
+
+Implement an algorithm that prints a binary tree in: pre-order, in-rder and post-order.
